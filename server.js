@@ -32,6 +32,6 @@ app.get('/api/:name', (request,response)=>{
     }
 })
 
-app.listen(PORT, ()=>{
+app.listen(process.env.PORT || PORT, ()=>{
     console.log(`Server is on fire yo at ${PORT}! `);
 } )
